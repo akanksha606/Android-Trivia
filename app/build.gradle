@@ -20,7 +20,7 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
-
+apply plugin: "androidx.navigation.safeargs.kotlin"
 android {
     compileSdkVersion 28
     dataBinding {
@@ -46,6 +46,8 @@ android {
 }
 
 dependencies {
+
+
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version_kotlin"
